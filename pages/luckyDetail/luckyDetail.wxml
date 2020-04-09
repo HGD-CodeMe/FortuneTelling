@@ -1,0 +1,46 @@
+<van-skeleton avatar title row="5" loading="{{load}}">
+  <view class="main">
+    <view class="banner" style="text-align: center;">
+      <image src="{{consImgUrl}}" class="consImg"></image>
+    </view>
+    <view class="main_3">
+      <view class="main_1">
+        <view class="consName">
+          {{resultList.name}}
+        </view>
+        <van-tag plain round type="warning" style="margin-top:25rpx">{{resultList.datetime}}</van-tag>
+        <view class="consAll">
+          <van-rate icon="like" void-icon="like-o" value="{{ (resultList.all/20) }}" />
+        </view>
+      </view>
+      <view class="main_2">
+        <van-circle value="{{ resultList.health }}" color="{{ gradientColor }}" text="健康" size="{{50}}" class="main_2_van-circle" />
+        <van-circle value="{{ resultList.love }}" color="{{ gradientColor }}" text="爱情" size="{{50}}" class="main_2_van-circle" />
+        <van-circle value="{{ resultList.money }}" color="{{ gradientColor }}" text="金钱" size="{{50}}" class="main_2_van-circle" />
+        <van-circle value="{{ resultList.work }}" color="{{ gradientColor }}" text="工作" size="{{50}}" class="main_2_van-circle" />
+      </view>
+      <view class="main_5">
+        <view class="lucky_num">
+          <text class="lucky_number">
+          幸运数字 {{resultList.number}} 幸运颜色 {{resultList.color}}
+         </text>
+          <text class="lucky_number1">
+          情侣星座 {{resultList.QFriend}}  
+         </text>
+        </view>
+      </view>
+      <view class="consSummary">
+        {{resultList.summary}}
+      </view>
+    </view>
+    <view>
+      <van-tabbar active="{{ active }}" bind:change="onChange" border="{{false}}" >
+        <van-tabbar-item name="home" icon="star-o">本周</van-tabbar-item>
+        <van-tabbar-item name="search" icon="like-o">本月</van-tabbar-item>
+        <van-tabbar-item name="friends" icon="fire-o">今日</van-tabbar-item>
+        <van-tabbar-item name="friends" icon="smile-o">明天</van-tabbar-item>
+        <van-tabbar-item name="setting" icon="more-o">今年</van-tabbar-item>
+      </van-tabbar>
+    </view>
+  </view>
+</van-skeleton>

@@ -1,0 +1,71 @@
+/* pages/luckyDetail/luckyDetail.wxss */
+
+.consName {
+  font-weight: bold;
+  font-size: 40rpx;
+  margin: 20rpx 10rpx 20rpx 60rpx;
+}
+
+.consAll {
+  margin: 20rpx auto;
+}
+
+.main_1 {
+  display: flex;
+}
+
+.main_2 {
+  display: flex;
+}
+
+.banner {
+  width: 96%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 20rpx auto;
+  border-radius: 10rpx;
+}
+
+.consSummary {
+  padding: 50rpx;
+}
+
+.lucky_number {
+  font-size: 35rpx;
+  font-weight: bold;
+  background: linear-gradient(45deg, #f43f3b, #ec008c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lucky_number1 {
+  font-size: 35rpx;
+  font-weight: bold;
+  background: linear-gradient(45deg, #0081ff, #1cbbb4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lucky_num {
+  margin: 0rpx 0rpx 0rpx 60rpx;
+}
+
+.main_3 {
+  width: 96%;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 10rpx auto;
+  border-radius: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+.main_2_van-circle {
+  margin-left: 60rpx;
+  margin-top: 20rpx;
+}
+
+.consImg {
+  border-radius: 10rpx;
+  width: 100%;
+  margin-bottom: -10rpx;
+}

@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view style="height:{{scrollHeight}}px">
+  <view class="container">
+    <view class="title">
+      星座。
+    </view>
+    <!-- 用户头像信息 -->
+    <view class="userinfo">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+  </view>
+
+  <view class="main">
+    <van-grid column-num="3" border="{{ false }}" gutter="{{ 5 }}" clickable="{{true}}">
+      <view class="animation-scale-down">
+        <van-grid-item use-slot wx:for="{{ constellationList }}" wx:for-item="item" bind:click="toDetail" data-name="{{item.name}}" data-img="{{item.imgUrl}}">
+          <image src="{{item.imgUrl}}" class="grid_img" />
+          <view class="grid_tips">{{item.name}}</view>
+        </van-grid-item>
+      </view>
+    </van-grid>
+  </view>
+</view>
